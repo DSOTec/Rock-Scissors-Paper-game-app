@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fed97a81b4.js" crossorigin="anonymous"></script>
+</head>
+<body class="preload">
+    <div class="container">
+        <header class="header">
+            <img src="logo.svg" class="logo">
+            <div class="score">
+                <div class="scoretitle">score</div>
+                <div class="scorenumber">12 </div>
+           </div>
+        </header>
+        <section class="game"> 
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="icon-paper.svg" alt="paper">
+                </div>
+                
+            </button>
+            
+            <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                <img src="icon-scissors.svg" alt="scissors">
+                </div>
+            </button>
+            
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                <img src="icon-rock.svg" alt="rock">
+                </div>
+            </button>
+        </section>
+       
+    </div>
+    <button class="rules-btn" tabindex="1">Rules</button>
+    <div class="modal">
+        <div class="modalcontainer">
+            <header class="modalheader">
+                <h2 class="modalheading">Rules</h2>
+                <i class="fa-solid fa-x"></i>
+            </header>
+            <img src="image-rules.svg" class="rules-img">
+        </div>
+    </div>
+    <div class="attribution">
+      <script src="script.js"></script>   
+</body>
+</html>
