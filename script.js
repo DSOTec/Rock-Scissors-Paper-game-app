@@ -24,14 +24,14 @@ const changeLayout = (choice) => {
    // the 5 choice variable shouldn't display
    inGamePage.style.display = "flex";
    //when the game becames display flex
-   userChoice.innerHTML = `<img src="images/icon-${choice}.svg">`;
+   userChoice.innerHTML = `<img src="icon-${choice}.svg">`;
    //here it allows user to access any of the 5 choice stated
    //note without this it will only display scissor icon
-   //`<img src="images/icon-${choice}.svg"> mean a link image of all the icon in the choice variable
+   //`<img src="icon-${choice}.svg"> mean a link image of all the icon in the choice variable
    userChoice.classList.add(choice);
 };
 const houseChoice = (choice) => {
-   houseChoiced.innerHTML = `<img src="images/icon-${choice}.svg">`;
+   houseChoiced.innerHTML = `<img src="icon-${choice}.svg">`;
    houseChoiced.classList.add(choice);
    houseChoiced.style.backgroundColor = "#fff";
    // the background color here is the bg where the icon rest on
