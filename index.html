@@ -1,60 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rock paper scissors game</title>
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/fed97a81b4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="icon"  href="favicon-32x32.png" />
+    <script src="script.js" defer></script>
 </head>
-<body class="preload">
-    <div class="container">
-        <header class="header">
-            <img src="logo.svg" class="logo">
-            <div class="score">
-                <div class="scoretitle">score</div>
-                <div class="scorenumber">12 </div>
-           </div>
-        </header>
-        <section class="game hidden"> 
-            <button class="choice-btn" data-choice="paper">
-                <div class="choice paper">
-                    <img src="icon-paper.svg" alt="paper">
-                </div>
-                
-            </button>
-            
-            <button class="choice-btn" data-choice="scissors">
-                <div class="choice scissors">
-                <img src="icon-scissors.svg" alt="scissors">
-                </div>
-            </button>
-            
-            <button class="choice-btn" data-choice="rock">
-                 <div class="choice rock">
-                <img src="icon-rock.svg" alt="rock">
-                </div>
-            </button>
-        </section>   
-    </div> 
-    <section class="results ">
-        <h2 class="resultheading">  you picked</h2>
-        <h2 class="resultheading">the house picked</h2>
-        <div class="realResults"></div>
-        <div class="realResults"></div>
+
+<body id="body">
+    <header class="non-rules">
+        <section class="header-section">
+            <figure>
+                <img src="logo-bonus.svg" alt="" />
+            </figure>
+            <div>
+                <p class="scoreText">Score</p>
+                <p class="score" id="score"></p>
+            </div>
+        </section>
+    </header>
+    <main class="non-rules">
+        <section class="startGame">
+            <button class="scissorsbtn gameButtons"><img src="icon-scissors.svg" alt="" /></button>
+            <button class="rockbtn gameButtons"><img src="icon-rock.svg" alt="" /></button>
+            <button class="paperbtn gameButtons"><img src="icon-paper.svg" alt="" /></button>
+        </section>
+        <section class="inGame">
+            <div class="player">
+                <p>You picked</p>
+                <button class="scissors" id="userChoice"><img src="icon-scissors.svg" alt=""></button>
+            </div>
+            <div class="status">
+                <p id="result">You Lose</p>
+                <button id="playAgain">play again</button>
+            </div>
+            <div class="house">
+                <p>The house picked</p>
+                <button class=" housebtn" id="houseChoice">
+                </button>
+            </div>
+        </section>
+    </main>
+    <section class="rules" id="rules">
+        <h2>Rules</h2>
+        <figure>
+            <img src="image-rules-bonus.svg" alt="">
+        </figure>
+        <button id="close"><img src="icon-close.svg" alt=""></button>
     </section>
-    <button class="rules-btn" tabindex="1">Rules</button>
-    <div class="modal">
-        <div class="modalcontainer">
-            <header class="modalheader">
-                <h2 class="modalheading">Rules</h2>
-                <i class="fa-solid fa-x"></i>
-            </header>
-            <img src="image-rules.svg" class="rules-img">
-        </div>
-    </div>
-    <div class="attribution">
-      <script src="script.js"></script>   
+    <footer class="non-rules">
+        <button class="rulesbtn">Rules</button>
+    </footer>
 </body>
 </html>
