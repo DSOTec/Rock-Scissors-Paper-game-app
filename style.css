@@ -143,6 +143,39 @@ body{
 .choice-btn[data-choice="rock"]{
     grid-area: rock;
 }
+.results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-template-areas: 
+      "you-title ai-title"
+      "you-picked ai-picked";
+      max-width: 1000px;
+      margin: 0 auto;
+}
+.resultheading{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 4rem 0 8rem;
+}
+.realResults{
+     min-width: 10rem;
+     min-height: 10rem;
+     background: #16213d;
+     border-radius: 50%;
+}
+.resultheading:first-of-type{
+    grid-area: you-title;
+}
+.resultheading:last-of-type{
+    grid-area: ai-title;
+}
+.realResults:first-of-type{
+    grid-area: you-picked;
+}
+.realResults:last-of-type{
+    grid-area: ai-picked;
+}
 
 .rules-btn{
     position: absolute;
@@ -206,6 +239,10 @@ body{
 }
 .preload{
     transition: none;
+}
+
+.hidden{
+    
 }
 
 .attribution { font-size: 11px; text-align: center; }
